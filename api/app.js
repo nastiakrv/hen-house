@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-//import postRoute from "./routes/post.route.js";
+import postRoute from "./routes/post.route.js";
 import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import testRoute from "./routes/test.route.js";
@@ -15,7 +15,7 @@ app.use(cookieParser())
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
-//app.use("/api/posts", postRoute);
+app.use("/api/posts", postRoute);
 app.use("/api/test", testRoute);
 
 

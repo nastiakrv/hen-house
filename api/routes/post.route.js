@@ -1,5 +1,5 @@
-/* import express from "express";
-import verifyToken from "../middleware/verifyToken.js";
+import express from "express";
+import {verifyToken} from "../middleware/verifyToken.js";
 import { addPost, deletePosts, getPost, getPosts, updatePost } from "../controllers/post.controller.js";
 
 
@@ -15,4 +15,4 @@ router.delete("/:id", verifyToken, deletePosts);
     console.log("router works")
 }) */
 
-//export default router; */
+export default router;
