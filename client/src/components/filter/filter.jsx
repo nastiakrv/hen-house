@@ -26,60 +26,68 @@ function Filter() {
 
     return (
         <div className='filter'>
-            <h1>Search results for<b> London</b></h1>
+            <h1>Search results for<b> {searchParams.get("city")}</b></h1>
             <div className="top">
                 <div className="item">
-                    <label htmlfor="city">Location</label>
+                    <label htmlFor="city">Location</label>
                     <input
                         type="text"
                         id="city"
                         name="city"
-                        placeholder='City Location' />
+                        placeholder='City Location' 
+                        onChange={handleChange}
+                        defaultValue={query.city}/>
                 </div>
             </div>
 
             <div className="bottom">
                 <div className="item">
-                    <label htmlfor="type">Type</label>
-                    <select name="type" id="type">
+                    <label htmlFor="type">Type</label>
+                    <select name="type" id="type" onChange={handleChange} defaultValue={query.type}>
                         <option value="">Any</option>
                         <option value="buy">Buy</option>
                         <option value="rent">Rent</option>
                     </select>
                 </div>
                 <div className="item">
-                    <label htmlfor="property">Property</label>
-                    <select name="property" id="property">
+                    <label htmlFor="property">Property</label>
+                    <select name="property" id="property" onChange={handleChange} defaultValue={query.property}>
                         <option value="">Any</option>
                         <option value="apartment">Apartment</option>
                         <option value="house">House</option>
                     </select>
                 </div>
                 <div className="item">
-                    <label htmlfor="minPrice">Min Price</label>
+                    <label htmlFor="minPrice">Min Price</label>
                     <input
                         type="number"
                         id="minPrice"
                         name="minPrice"
-                        placeholder='Any' />
+                        placeholder='Any' 
+                        onChange={handleChange}
+                        defaultValue={query.minPrice}/>
                 </div>
                 <div className="item">
-                    <label htmlfor="maxPrice">Max Price</label>
+                    <label htmlFor="maxPrice">Max Price</label>
                     <input
                         type="number"
                         id="maxPrice"
                         name="maxPrice"
-                        placeholder='Any' />
+                        placeholder='Any' 
+                        onChange={handleChange}
+                        defaultValue={query.maxPrice}/>
                 </div>
                 <div className="item">
-                    <label htmlfor="bedroom">Bedroom</label>
+                    <label htmlFor="bedroom">Bedroom</label>
                     <input
                         type="text"
                         id="bedroom"
                         name="bedroom"
-                        placeholder='Any' />
+                        placeholder='Any' 
+                        onChange={handleChange}
+                        defaultValue={query.bedroom}/>
                 </div>
-                <button>
+                <button onClick={handleFilter}>
                     <img src="/search.png" alt="" />
                 </button>
             </div>
