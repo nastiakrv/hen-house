@@ -12,11 +12,11 @@ function ProfilePage() {
 
   const navigate = useNavigate()
 
-/*   useEffect(() => {
-    if (!currentUser) {
-      navigate("/login");
-    }
-  }, [currentUser, navigate]) */
+  /*   useEffect(() => {
+      if (!currentUser) {
+        navigate("/login");
+      }
+    }, [currentUser, navigate]) */
 
   const handleLogout = async () => {
     try {
@@ -38,7 +38,7 @@ function ProfilePage() {
           <div className="title">
             <h1>User Info</h1>
             <Link to="/profile/update">
-            <button>Update Profile</button>
+              <button>Update Profile</button>
             </Link>
           </div>
           <div className="info">
@@ -59,7 +59,9 @@ function ProfilePage() {
           </div>
           <div className="title">
             <h1>My List</h1>
-            <button>Create Post</button>
+            <Link to ="/add">
+              <button>Create Post</button>
+            </Link>
           </div>
           <List />
           <div className="title">
