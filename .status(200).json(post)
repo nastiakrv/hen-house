@@ -1,0 +1,23 @@
+[33mcommit 40ee3246da5d67b8a537dea881eeb5fb6f456178[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Anastasiia Kravets <nastya030915@gmail.com>
+Date:   Tue Dec 10 16:33:16 2024 +0200
+
+    somehow works search if we are changing the link
+
+[33mcommit 416ddc27de0d2964215dee35315689e8147b7c9f[m
+Author: Anastasiia Kravets <nastya030915@gmail.com>
+Date:   Tue Dec 10 02:33:37 2024 +0200
+
+    posts can be added and deleted
+
+[33mcommit 885124ead3ec09a72d17ee552239c751b6f9472a[m
+Author: Anastasiia Kravets <nastya030915@gmail.com>
+Date:   Tue Dec 10 01:15:07 2024 +0200
+
+    fixed routes and added posts
+
+[33mcommit 6d1f80dc92b6b818d32ea207b159c520d33fc77d[m
+Author: Anastasiia Kravets <nastya030915@gmail.com>
+Date:   Tue Dec 10 00:59:53 2024 +0200
+
+    db user added
